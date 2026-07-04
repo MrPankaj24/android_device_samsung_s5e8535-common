@@ -21,6 +21,16 @@
             "ResetOnInit": true
         },
         {
+            "Name": "CPUMinFreq",
+            "Path": "/sys/devices/platform/exynos-ufcc/ufc/cpufreq_min_limit",
+            "Values": [
+                "0",
+                "2400000"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
             "Name": "EmsTuneReqMode",
             "Path": "/sys/kernel/ems/emstune/req_mode",
             "Values": [
@@ -71,6 +81,12 @@
             "Node": "GPUMinFreq",
             "Duration": 2000,
             "Value": "845000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUMinFreq",
+            "Duration": 2000,
+            "Value": "2400000"
         },
         {
             "PowerHint": "INTERACTIVE",
