@@ -87,7 +87,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Reserved Partition size
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/matrixx/config/BoardConfigReservedSize.mk
 
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
@@ -151,7 +151,7 @@ VENDOR_SECURITY_PATCH := 2026-05-05
 
 # Sepolicy
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
-include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/matrixx/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
